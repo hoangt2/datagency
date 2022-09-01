@@ -14,9 +14,9 @@ const data = [
     id: 1,
     imgSrc: PostThumb1,
     altText: 'Marketing',
-    postLink: '#',
-    title: 'Product Marketing: Monopoly Market',
-    authorName: 'Cali Cartel',
+    postLink: '/blog/ssg-ssr',
+    title: 'First Post',
+    authorName: 'Datagency',
     date: 'Oct 20, 2020',
   },
   {
@@ -51,8 +51,8 @@ const data = [
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1310 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
+    items: 4,
+    slidesToSlide: 4, // optional, default to 1.
   },
   laptop: {
     breakpoint: { max: 1310, min: 1024 },
@@ -71,13 +71,13 @@ const responsive = {
   },
 };
 
-export default function BlogSection() {
+export default function BlogSection({allPostsData}) {
   return (
-    <section sx={{ variant: 'section.news' }}>
+    <section sx={{ variant: 'section.news' }} id='blog'>
       <Container>
         <SectionHeader
           slogan="our blog"
-          title="Explore our products for your business solution"
+          title="Get updated on insights and tips for data & analytics"
         />
 
         <Box sx={styles.carouselWrapper}>
@@ -103,17 +103,17 @@ export default function BlogSection() {
             sliderClass=""
             slidesToSlide={1}
           >
-            {data.map((item) => (
+
+            {allPostsData.map(({ id, postLink, date, title, author }) => (
               <PostCard
-                key={item.id}
-                src={item.imgSrc}
-                alt={item.altText}
-                postLink={item.postLink}
-                title={item.title}
-                authorName={item.authorName}
-                date={item.date}
+                key={id}
+                postLink={`/blog/${id}`}
+                title={title}
+                date={date}
+                authorName={author}
               />
             ))}
+
           </Carousel>
         </Box>
       </Container>

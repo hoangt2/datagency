@@ -15,4 +15,8 @@ export default [
     path: 'about',
     label: 'About',
   },
+  {
+    path: 'blog',
+    label: 'Blog',
+  },
 ];
