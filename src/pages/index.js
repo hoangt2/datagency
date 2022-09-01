@@ -11,7 +11,18 @@ import TestimonialCard from '../sections/testimonial';
 import BlogSection from '../sections/blog-section';
 import Subscribe from '../sections/subscribe';
 
-export default function IndexPage() {
+import { getSortedPostsData } from '../../lib/posts';
+
+export async function getStaticProps() {
+  const allPostsData = await getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function IndexPage({allPostsData}) {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
@@ -21,6 +32,7 @@ export default function IndexPage() {
           <KeyFeature />
           <TestimonialCard />
           <CoreFeature />
+          <BlogSection allPostsData={allPostsData}/>
         </Layout>
       </StickyProvider>
     </ThemeProvider>
