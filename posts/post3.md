@@ -2,6 +2,7 @@
 title: 'This is post 3'
 date: '2021-01-02'
 author: 'Datagency.fi'
+thumbnail: './blog/1.jpg'
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
