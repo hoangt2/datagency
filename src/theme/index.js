@@ -198,6 +198,11 @@ export default {
       color: '#00A99D',
       lineHeight: '40px',
     },
+    blogHeader: {
+      color: 'heading',
+      fontSize: '46px',
+      pt: '30px',
+    },
   },
   links: {
     default: {

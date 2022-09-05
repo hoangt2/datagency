@@ -62,12 +62,13 @@ export default function BlogSection({allPostsData}) {
             slidesToSlide={1}
           >
 
-            {allPostsData.map(({ id, thumbnail, date, title, author }) => (
+            {allPostsData.map(({ id, thumbnail, date, title, excerpt, author }) => (
               <PostCard
                 key={id}
                 postLink={`/blog/${id}`}
                 src={thumbnail}
                 title={title}
+                excerpt={excerpt}
                 date={date}
                 authorName={author}
               />
