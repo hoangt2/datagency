@@ -14,7 +14,7 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
           We provide data analytics consulting and implementation services to grow your business
           </Text>
-          <Link to='https://www.linkedin.com/in/httung/'>
+          <Link href='https://www.linkedin.com/in/httung/'>
               <Button 
               variant='primary'
               aria-label='start'>

@@ -29,7 +29,7 @@ export default function Header({ className }) {
             </Link>
           ))}
         </Flex>
-        <Link href='https://www.linkedin.com/in/httung/' sx={styles.button}>
+        <Link to='about' sx={styles.button}>
           <Button 
           className='donate__btn' 
           variant='secondary'
