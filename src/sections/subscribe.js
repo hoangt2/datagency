@@ -32,21 +32,22 @@ export default function Subscribe() {
     inputEl.current.value = '';
   };
 
-  const handleSendGridResponse = (status, msg) => {
-    if (status === 200) {
-      // 5. Clear the input value and show a success message.
-      setStatus({
-        submitted: true,
-        submitting: false,
-        info: { error: false, msg: msg },
-      });
-      inputEl.current.value = '';
-    } else {
-      setStatus({
-        info: { error: true, msg: msg },
-      });
-    }
-  };
+  // const handleSendGridResponse = (status, msg) => {
+  //   if (status === 200) {
+  //     // 5. Clear the input value and show a success message.
+  //     setStatus({
+  //       submitted: true,
+  //       submitting: false,
+  //       info: { error: false, msg: msg },
+  //     });
+  //     inputEl.current.value = '';
+  //   } else {
+  //     setStatus({
+  //       info: { error: true, msg: msg },
+  //     });
+  //   }
+  // };
+  
   const subscribe = async (e) => {
     e.preventDefault();
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
@@ -68,8 +69,8 @@ export default function Subscribe() {
       'Success! 🎉 You are now subscribed to the newsletter.'
     );
     // For sendGrid integration
-    const text = await res.text();
-    handleSendGridResponse(res.status, text);
+    // const text = await res.text();
+    // handleSendGridResponse(res.status, text);
   };
   return (
     <section>

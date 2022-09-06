@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.78",
     "@next/env": "^12.2.5",
     "dotenv": "^8.2.0",
     "framer-motion": "^2.7.5",
