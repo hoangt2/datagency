@@ -29,12 +29,14 @@ export default function Header({ className }) {
             </Link>
           ))}
         </Flex>
-        <Button 
-        className='donate__btn' 
-        variant='secondary'
-        aria-label='Start'>
-          Contact Us
-        </Button>
+        <Link href='https://www.linkedin.com/in/httung/' sx={styles.button}>
+          <Button 
+          className='donate__btn' 
+          variant='secondary'
+          aria-label='contact'>
+            Contact Us
+          </Button>
+        </Link>
         <MobileDrawer>
           
         </MobileDrawer>

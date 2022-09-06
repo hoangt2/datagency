@@ -1,20 +1,9 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
+title: 'Cras felis diam, finibus in erat vel'
 date: '2020-01-02'
 thumbnail: '../../blog/4.png'
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+Suspendisse at pulvinar justo. Fusce volutpat quam dapibus, venenatis risus et, egestas enim. Maecenas mollis quis enim quis pulvinar. Cras vel nulla felis. Cras luctus elit iaculis mauris ullamcorper ullamcorper. Vestibulum iaculis ipsum quam, eget vehicula ante posuere nec. Duis placerat justo sem, id eleifend justo ultricies vel. Vestibulum ultrices nisl rutrum lorem sagittis blandit. Vivamus et vulputate ligula. Nunc ultrices fermentum justo, a pharetra ex. Morbi ac gravida enim. Pellentesque ac tempus libero. Vestibulum aliquet, tortor sed vestibulum fringilla, magna turpis imperdiet velit, sed elementum nisl eros et mauris.
 
-You can use Static Generation for many types of pages, including:
-
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
-
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
-
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
-
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+Cras felis diam, finibus in erat vel, tincidunt viverra lacus. Mauris eget odio eu lectus scelerisque vestibulum. Praesent fermentum vitae sem non lobortis. Aenean pretium libero eu ligula consequat, eget venenatis mauris rutrum. Fusce et felis non dui tincidunt pharetra. Integer a tincidunt tortor. Proin nibh dolor, vulputate ut pharetra eget, varius vulputate felis. Vestibulum fringilla sagittis iaculis. Duis laoreet enim a tincidunt sollicitudin. Phasellus non posuere metus. Proin condimentum tristique lorem at finibus. Vivamus pulvinar tincidunt lectus et luctus. Sed imperdiet imperdiet dolor.

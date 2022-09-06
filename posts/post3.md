@@ -1,22 +1,11 @@
 ---
-title: 'This is post 3'
+title: 'Lorem ipsum'
 date: '2021-01-02'
 author: 'Datagency.fi'
-thumbnail: '../../blog/1.jpg'
-excerpt: 'We recommend using Static Generation (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.'
+thumbnail: '../../blog/3.png'
+excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis ante sed nunc suscipit molestie. Maecenas sagittis tortor vel gravida varius. Suspendisse venenatis tortor commodo nulla lacinia, sit amet blandit diam vestibulum. '
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis ante sed nunc suscipit molestie. Maecenas sagittis tortor vel gravida varius. Suspendisse venenatis tortor commodo nulla lacinia, sit amet blandit diam vestibulum. Vivamus commodo nisi id imperdiet accumsan. Donec ac diam quis mi commodo vestibulum sit amet vel sapien. Donec tempus augue in nisl pharetra, a eleifend quam porttitor. Fusce id magna nec ex dignissim condimentum.
 
-You can use Static Generation for many types of pages, including:
-
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
-
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
-
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
-
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+Nullam maximus bibendum lacinia. Duis sed leo mauris. Curabitur vehicula vehicula urna, sit amet dictum nisi consequat a. Duis porttitor efficitur felis ac lacinia. Etiam faucibus blandit consequat. Nam at faucibus enim, ac finibus neque. Praesent aliquet sodales mauris, eget malesuada dui congue congue. Aliquam sit amet dui at tellus venenatis elementum. Ut ullamcorper ligula a ex ultricies luctus. Phasellus finibus vitae lacus vitae pulvinar. Etiam tincidunt mi ut nulla ornare ultrices. Integer id sem consectetur, molestie lectus vel, porta erat. Curabitur semper ipsum at leo facilisis euismod. Cras venenatis fringilla risus, ut auctor est laoreet nec. Curabitur tempus erat sed tortor venenatis laoreet. In finibus metus ex, et auctor tortor venenatis at.
