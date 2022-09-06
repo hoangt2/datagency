@@ -6,6 +6,7 @@ export default function PostCard({
   alt,
   postLink,
   title,
+  excerpt,
   authorName,
   date,
 }) {
@@ -21,6 +22,10 @@ export default function PostCard({
             {title}
           </Link>
         </Heading>
+
+        <Flex sx={styles.postContent}>
+          <Text>{excerpt}</Text>
+        </Flex>
 
         <Flex sx={styles.postFooter}>
           <Text sx={styles.postFooter.name}>{authorName}</Text>
@@ -54,15 +59,16 @@ const styles = {
   postContent: {
     flexDirection: 'column',
     justifyContent: 'space-between',
-    padding: ['15px 20px', '25px 30px'],
+    padding: ['15px 10px', '25px 10px'],
   },
   title: {
     fontSize: [3, null, null, null, null, 4],
     color: 'heading',
     lineHeight: [1.4, 1.5],
     fontWeight: 700,
-    mb: [3, 4, 5],
+    mb: [0, 1, 2],
     pr: [0, null, null, null, 5],
+    textAlign: 'center',
   },
   postFooter: {
     width: '100%',
