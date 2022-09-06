@@ -1,11 +1,12 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Grid, Flex } from 'theme-ui';
+import { Container, Link, Button, Grid, Flex } from 'theme-ui';
 import { ThemeProvider } from 'theme-ui';
 import theme from 'theme';
 import BlogPost from 'components/blog-post';
 import Logo from 'components/logo';
 import LogoDark from 'assets/logo.svg';
+import Subscribe from '../sections/subscribe';
 
 import { getSortedPostsData } from '../../lib/posts';
 
@@ -21,13 +22,17 @@ export async function getStaticProps() {
 export default function Blog({allPostsData}) {
   return (
     <ThemeProvider theme={theme}>
-      <Container sx={styles.container}>
-
+      <Container>
         <Flex sx={styles.header}>
           <Logo src={LogoDark}/>
-          <Heading as="h1" variant="blogHeader">
-            Blog
-          </Heading>
+          <Link href='/' sx={styles.button}>
+            <Button 
+              className='donate__btn' 
+              variant='secondary'
+              aria-label='Home Page'>
+                Home Page
+            </Button>
+          </Link>
         </Flex>
 
         <Grid sx={styles.grid}>
@@ -43,6 +48,7 @@ export default function Blog({allPostsData}) {
             />
           ))}
         </Grid>
+        <Subscribe/>
       </Container>
     </ThemeProvider>      
   );
@@ -53,6 +59,11 @@ const styles = {
     pt: '30px',
     pb:'50px',
     justifyContent: 'space-between'
+  },
+  button: {
+    display: 'flex',
+    alignItems: 'center',
+    textDecoration: 'none',
   },
   grid: {
     width: ['100%', '80%', '100%'],

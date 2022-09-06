@@ -80,8 +80,7 @@ export default function Subscribe() {
               Subscribe to our Blog
             </Heading>
             <Text as="p" sx={styles.description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
-              tempor incididunt labore dolore.
+              Leave your emails to get the most updated insights for your data analytics journey
             </Text>
             <form onSubmit={subscribe}>
               <Flex sx={styles.subscribeForm}>

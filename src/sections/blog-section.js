@@ -74,7 +74,6 @@ export default function BlogSection({allPostsData}) {
                 authorName={author}
               />
             ))}
-
           </Carousel>
         </Box>
         
