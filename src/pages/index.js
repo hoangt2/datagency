@@ -33,6 +33,7 @@ export default function IndexPage({allPostsData}) {
           <TestimonialCard />
           <CoreFeature />
           <BlogSection allPostsData={allPostsData}/>
+          <Subscribe />
         </Layout>
       </StickyProvider>
     </ThemeProvider>

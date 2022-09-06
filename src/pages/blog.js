@@ -6,6 +6,7 @@ import theme from 'theme';
 import BlogPost from 'components/blog-post';
 import Logo from 'components/logo';
 import LogoDark from 'assets/logo.svg';
+import Subscribe from '../sections/subscribe';
 
 import { getSortedPostsData } from '../../lib/posts';
 
@@ -47,6 +48,7 @@ export default function Blog({allPostsData}) {
             />
           ))}
         </Grid>
+        <Subscribe/>
       </Container>
     </ThemeProvider>      
   );

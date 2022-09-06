@@ -4,8 +4,6 @@ import { ThemeProvider, Container, Flex, Heading, Link, Button, Box, Image } fro
 import theme from 'theme';
 import Logo from 'components/logo';
 import LogoDark from 'assets/logo.svg';
-import Layout from 'components/layout';
-//import Head from 'next/head';
 //import Date from '../../components/date';
 
 export async function getStaticProps({ params }) {
