@@ -60,7 +60,7 @@ const styles = {
   postContent: {
     flexDirection: 'column',
     justifyContent: 'space-between',
-    padding: ['15px 5px', '25px 30px'],
+    padding: ['15px 10px', '25px 10px'],
   },
   title: {
     fontSize: [3, null, null, null, null, 4],

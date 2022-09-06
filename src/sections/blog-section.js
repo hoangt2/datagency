@@ -1,10 +1,11 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box } from 'theme-ui';
+import { Container, Box, Button, Link } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import PostCard from 'components/post-card.js';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
+import { FaFileExcel } from 'react-icons/fa';
 
 const responsive = {
   desktop: {
@@ -32,7 +33,7 @@ const responsive = {
 export default function BlogSection({allPostsData}) {
   return (
     <section sx={{ variant: 'section.news' }} id='blog'>
-      <Container>
+      <Container sx={styles.container}>
         <SectionHeader
           slogan="our blog"
           title="Get updated on insights and tips for data & analytics"
@@ -76,12 +77,27 @@ export default function BlogSection({allPostsData}) {
 
           </Carousel>
         </Box>
+        
+        <Link href='/blog' sx={styles.button}>
+          <Button variant="primary" >Read More</Button>
+        </Link>
+          
       </Container>
     </section>
   );
 }
 
 const styles = {
+  container: {
+    minHeight: 'inherit',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+  button: {
+    pt: '30px',
+    margin: 'auto',
+  },
   carouselWrapper: {
     '.carousel-container': {
       mx: -3,

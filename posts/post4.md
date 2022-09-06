@@ -3,7 +3,7 @@ title: 'This is post 4'
 date: '2022-01-01'
 author: 'Tung Hoang'
 thumbnail: './blog/2.jpg'
-excerpt: 'Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.'
+excerpt: 'Next.js has two forms of pre-rendering: Static Generation** and Server-side Rendering. The difference is in **when** it generates the HTML for a page.'
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
