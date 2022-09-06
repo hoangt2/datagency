@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
+import { Container, Box, Heading, Text, Link, Button } from 'theme-ui';
 import BannerImg from 'assets/banner.png';
 
 export default function Banner() {
@@ -14,7 +14,13 @@ export default function Banner() {
           <Text as="p" variant="heroSecondary">
           We provide data analytics consulting and implementation services to grow your business
           </Text>
-          <Button variant="primary">Start Your Journey</Button>
+          <Link to='https://www.linkedin.com/in/httung/'>
+              <Button 
+              variant='primary'
+              aria-label='start'>
+                Start Your Journey
+              </Button>
+            </Link>
         </Box>
       </Container>
     </section>

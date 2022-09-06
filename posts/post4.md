@@ -1,16 +1,11 @@
 ---
-title: 'This is post 4'
+title: 'Lorem ipsum'
 date: '2022-01-01'
 author: 'Tung Hoang'
-thumbnail: '../../blog/2.jpg'
-excerpt: 'Next.js has two forms of pre-rendering: Static Generation** and Server-side Rendering. The difference is in **when** it generates the HTML for a page.'
+thumbnail: '../../blog/4.png'
+excerpt: 'Suspendisse at pulvinar justo. Fusce volutpat quam dapibus, venenatis risus et, egestas enim. Maecenas mollis quis enim quis pulvinar. Cras vel nulla felis. Cras luctus elit iaculis mauris ullamcorper ullamcorper.'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Suspendisse at pulvinar justo. Fusce volutpat quam dapibus, venenatis risus et, egestas enim. Maecenas mollis quis enim quis pulvinar. Cras vel nulla felis. Cras luctus elit iaculis mauris ullamcorper ullamcorper. Vestibulum iaculis ipsum quam, eget vehicula ante posuere nec. Duis placerat justo sem, id eleifend justo ultricies vel. Vestibulum ultrices nisl rutrum lorem sagittis blandit. Vivamus et vulputate ligula. Nunc ultrices fermentum justo, a pharetra ex. Morbi ac gravida enim. Pellentesque ac tempus libero. Vestibulum aliquet, tortor sed vestibulum fringilla, magna turpis imperdiet velit, sed elementum nisl eros et mauris.
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
-
-![test](../../blog/2.jpg "test")
-
-Importantly, Next.js let's you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+Cras felis diam, finibus in erat vel, tincidunt viverra lacus. Mauris eget odio eu lectus scelerisque vestibulum. Praesent fermentum vitae sem non lobortis. Aenean pretium libero eu ligula consequat, eget venenatis mauris rutrum. Fusce et felis non dui tincidunt pharetra. Integer a tincidunt tortor. Proin nibh dolor, vulputate ut pharetra eget, varius vulputate felis. Vestibulum fringilla sagittis iaculis. Duis laoreet enim a tincidunt sollicitudin. Phasellus non posuere metus. Proin condimentum tristique lorem at finibus. Vivamus pulvinar tincidunt lectus et luctus. Sed imperdiet imperdiet dolor.
