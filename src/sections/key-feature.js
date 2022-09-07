@@ -3,12 +3,12 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Strategy from 'assets/key-feature/strategy.svg';
-import GrowthMarketing from 'assets/key-feature/growth-marketing.svg';
-import DataStack from 'assets/key-feature/data-stack.svg';
-import Competency from 'assets/key-feature/competency.svg';
-import Visualization from 'assets/key-feature/visualization.svg';
-import MachineLearning from 'assets/key-feature/machine-learning.svg'
+import Strategy from 'assets/key-feature/strategy.png';
+import GrowthMarketing from 'assets/key-feature/growth-marketing.png';
+import DataStack from 'assets/key-feature/data-stack.png';
+import Competency from 'assets/key-feature/competency.png';
+import Visualization from 'assets/key-feature/visualization.png';
+import MachineLearning from 'assets/key-feature/machine-learning.png'
 
 const data = [
   {

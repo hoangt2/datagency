@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
     return (
       <ThemeProvider theme={theme}>
-          <Container>
+          <Container pb='300px'>
             <Flex sx={styles.header}>
               <Logo src={LogoDark}/>
               <Link href='/blog' sx={styles.button}>

@@ -32,8 +32,9 @@ const styles = {
     mx: ['auto', null, 0],
     ml: ['auto', null, '-13px'],
     mb: 5,
-    width: ['80px', null, null, '80px', null, '80px'],
+    width: ['120px', null, null, '120px', null, '120px'],
     alignItems: 'center',
+    filter: 'drop-shadow(10px 10px 10px #CCCCCC)',
   },
   wrapper: {
     width: '100%',
