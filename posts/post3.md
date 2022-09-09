@@ -2,7 +2,7 @@
 title: 'Lorem ipsum'
 date: '2021-01-02'
 author: 'Datagency.fi'
-thumbnail: '../../blog/3.png'
+thumbnail: '../../blog/1.png'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis ante sed nunc suscipit molestie. Maecenas sagittis tortor vel gravida varius. Suspendisse venenatis tortor commodo nulla lacinia, sit amet blandit diam vestibulum. '
 ---
 

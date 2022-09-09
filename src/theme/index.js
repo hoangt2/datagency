@@ -10,7 +10,8 @@ export default {
     border_color: '#E5ECF4', // border color
     yellow: '#FFA740', // border color
     // primary: '#1FAB89', // primary button and link color
-    primary: '#757575',
+    // primary: '#757575',
+    primary: '#FC7061',
     secondary: '#2563FF', // secondary color - can be used for hover states
     muted: '#E4E4E4', // muted color
     accent: '#609', // a contrast color for emphasizing UI
@@ -93,7 +94,8 @@ export default {
       pb: [8, null, 9, null, null, 10, null, '170px'],
     },
     news: {
-      background: '#F2F2F2',
+      // background: '#F2F2F2',
+      background: '#FCF4EF',
       pt: [8, null, 8, '70px', null, 8, null, '145px'],
       pb: [8, null, 9, null, null, 10, null, '170px'],
     },
@@ -102,7 +104,7 @@ export default {
       overflow: 'hidden',
     },
     testimonial: {
-      background: '#F2F2F2',
+      background: '#FCF4EF',
       pt: [8, null, 8, '70px', null, 8, null, '145px'],
       pb: ['90px', null, 9, null, null, 10, null, '190px'],
       overflow: 'hidden',

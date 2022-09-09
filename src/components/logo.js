@@ -14,7 +14,7 @@ export default function Logo({ src, ...rest }) {
       }}
       {...rest}
     >
-      <Image src={src} alt="Datagency logo" width="180px"/>
+      <Image src={src} alt="Datagency logo" width="180px" fill='green'/>
     </Link>
   );
 }

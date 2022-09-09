@@ -2,6 +2,7 @@
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Link, Button } from 'theme-ui';
 import BannerImg from 'assets/banner.png';
+import ShapeLeft from 'assets/shape-left.png';
 
 export default function Banner() {
   return (
@@ -33,8 +34,23 @@ const styles = {
     pb: [2, null, 0, null, 2, 0, null, 5],
     position: 'relative',
     zIndex: 2,
-    backgroundImage: `url(${BannerImg})`,
-    backgroundSize: 'cover',
+    overflow: 'hidden',
+    // backgroundImage: `url(${BannerImg})`,
+    // backgroundSize: 'cover',
+    backgroundColor: '#FCF4EF',
+    '&::before': {
+      position: 'absolute',
+      content: '""',
+      top: 180,
+      left: 200,
+      height: '100%',
+      width: '100%',
+      zIndex: -1,
+      backgroundImage: `url(${ShapeLeft})`,
+      backgroundRepeat: `no-repeat`,
+      backgroundPosition: 'bottom left',
+      backgroundSize: '30%',
+    },
 
     container: {
       minHeight: 'inherit',

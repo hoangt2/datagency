@@ -2,7 +2,7 @@
 title: 'Lorem ipsum'
 date: '2022-01-01'
 author: 'Tung Hoang'
-thumbnail: '../../blog/4.png'
+thumbnail: '../../blog/2.png'
 excerpt: 'Suspendisse at pulvinar justo. Fusce volutpat quam dapibus, venenatis risus et, egestas enim. Maecenas mollis quis enim quis pulvinar. Cras vel nulla felis. Cras luctus elit iaculis mauris ullamcorper ullamcorper.'
 ---
 
