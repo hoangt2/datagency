@@ -41,15 +41,15 @@ const styles = {
     '&::before': {
       position: 'absolute',
       content: '""',
-      top: 180,
-      left: 200,
+      top: 170,
+      left: -50,
       height: '100%',
       width: '100%',
       zIndex: -1,
       backgroundImage: `url(${ShapeLeft})`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom left',
-      backgroundSize: '30%',
+      backgroundSize: '40%',
     },
 
     container: {
