@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, Image, Box, Heading, Text, Flex, Link } from 'theme-ui';
+import Date from 'components/date';
 
 export default function PostCard({
   src,
@@ -29,7 +30,7 @@ export default function PostCard({
 
         <Flex sx={styles.postFooter}>
           <Text sx={styles.postFooter.name}>{authorName}</Text>
-          <Text sx={styles.postFooter.date}>{date}</Text>
+          <Text sx={styles.postFooter.date}>{ <Date dateString={date}/> }</Text>
         </Flex>
       </Flex>
     </Box>

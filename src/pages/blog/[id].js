@@ -5,7 +5,7 @@ import theme from 'theme';
 import Logo from 'components/logo';
 import LogoDark from 'assets/logo.svg';
 import Subscribe from '../../sections/subscribe';
-//import Date from '../../components/date';
+import Date from '../../components/date';
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -48,15 +48,16 @@ export default function Post({ postData }) {
               <Heading as="h1" variant="blogHeader">
                 {postData.title}
               </Heading>
-
+              
+              <Flex sx={styles.postHeader}>
+                <Text sx={styles.postHeader.name}>{postData.author}</Text>
+                <Text sx={styles.postHeader.date}>{ <Date dateString={postData.date}/> }</Text>
+              </Flex>
+              
               <article>
                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}/>
               </article>
 
-              <Flex sx={styles.postFooter}>
-                <Text sx={styles.postFooter.name}>{postData.author}</Text>
-                <Text sx={styles.postFooter.date}>{postData.date}</Text>
-              </Flex>
 
             </Box>
 
@@ -89,19 +90,19 @@ export default function Post({ postData }) {
       width: ['95%','90%','70%'],
       pb: '50px',
     },
-    postFooter: {
+    postHeader: {
       pt: '50px',
       width: '100%',
       justifyContent: 'space-between',
       alignItem: 'center',
       name: {
-        fontSize: ['14px', null, 5],
+        fontSize: [3, null, 4],
         fontWeight: 500,
         color: 'primary',
         lineHeight: 1.4,
       },
       date: {
-        fontSize: ['14px', null, 5],
+        fontSize: [3, null, 4],
         fontWeight: 400,
         lineHeight: 1.5,
       },

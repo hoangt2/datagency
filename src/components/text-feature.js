@@ -5,6 +5,8 @@ export default function TextFeature({
   subTitle,
   title,
   description,
+  email,
+  phone,
   btnName,
   btnURL = '#',
 }) {
@@ -25,8 +27,20 @@ export default function TextFeature({
         </Text>
       )}
 
+      {email && (
+        <Text as="p" className="email" sx={styles.contact}>
+          {email}
+        </Text>
+      )}
+
+      {phone && (
+        <Text as="p" className="phone" sx={styles.contact}>
+          {phone}
+        </Text>
+      )}
+
       {btnName && (
-        <Link href={btnURL} variant="default">
+        <Link href={btnURL} variant="default" pt='30px'>
           <Button variant="primary" aria-label={btnName}>
             {btnName}
           </Button>
@@ -76,4 +90,10 @@ const styles = {
     color: 'text_secondary',
     mb: '30px',
   },
+  contact: {
+    fontSize: [1, 2, null, null, null, 3, null, 5],
+    fontWeight: 600,
+    lineHeight: [1.85, null, null, 2, null, '2.2'],
+    color: 'text_primary',
+  }
 };

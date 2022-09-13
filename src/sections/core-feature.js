@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Box } from 'theme-ui';
+import { jsx, Container, Box, Text } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 
@@ -11,6 +11,8 @@ const data = {
   title: 'I am an experienced data analyst based in Helsinki',
   description:
     'I develop powerful data analytics strategies and solutions that help startups and growing companies utilise their data and achieve their business visions. I have years of experience working with data analytics in the banking and fintech sector, which makes me understand and fulfil the emerging data needs of growing companies with efficient and scaleable data analytics solutions.',
+  email: 'tung@datagency.fi',
+  phone: '+358 50 506 6578',
   btnName: 'Connect with me on LinkedIn',
   btnURL: 'https://www.linkedin.com/in/httung/',
 };
@@ -24,6 +26,8 @@ export default function CoreFeature() {
             subTitle={data.subTitle}
             title={data.title}
             description={data.description}
+            email={data.email}
+            phone={data.phone}
             btnName={data.btnName}
             btnURL={data.btnURL}
           />

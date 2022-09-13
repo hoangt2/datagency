@@ -7,6 +7,7 @@ import BlogPost from 'components/blog-post';
 import Logo from 'components/logo';
 import LogoDark from 'assets/logo.svg';
 import Subscribe from '../sections/subscribe';
+import Date from '../components/date';
 
 import { getSortedPostsData } from '../../lib/posts';
 
@@ -43,7 +44,7 @@ export default function Blog({allPostsData}) {
               src={thumbnail}
               title={title}
               excerpt={excerpt}
-              date={date}
+              date={ <Date dateString={date} />}
               authorName={author}
             />
           ))}
