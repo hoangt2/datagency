@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
     return (
       <ThemeProvider theme={theme}>
-          <Container pb='50px'>
+          <Container>
             <Flex sx={styles.header}>
               <Logo src={LogoDark}/>
               <Link href='/blog' sx={styles.button}>
@@ -90,7 +90,7 @@ export default function Post({ postData }) {
       mx: 'auto',
       // flexDirection: 'column',
       alignItems: 'center',
-      width: ['95%','90%','70%'],
+      width: ['100%','90%','70%'],
       pb: '50px',
     },
     postHeader: {
