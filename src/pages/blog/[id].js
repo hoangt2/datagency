@@ -40,7 +40,7 @@ export default function Post({ postData }) {
               </Link>
             </Flex>
 
-            <Box sx={styles.article}>
+            <Box>
               <Box sx={styles.thumbnail}>
                 <Image src={postData.thumbnail}/>
               </Box>
@@ -53,11 +53,14 @@ export default function Post({ postData }) {
                 <Text sx={styles.postHeader.name}>{postData.author}</Text>
                 <Text sx={styles.postHeader.date}>{ <Date dateString={postData.date}/> }</Text>
               </Flex>
-              
-              <article>
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}/>
-              </article>
 
+              <Flex sx={styles.article}>
+                <Text dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+              </Flex>
+              
+              {/* <article>
+                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}/>
+              </article> */}
 
             </Box>
 
@@ -85,7 +88,7 @@ export default function Post({ postData }) {
     article: {
       display: 'flex',
       mx: 'auto',
-      flexDirection: 'column',
+      // flexDirection: 'column',
       alignItems: 'center',
       width: ['95%','90%','70%'],
       pb: '50px',
