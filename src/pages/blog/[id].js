@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
     return (
       <ThemeProvider theme={theme}>
-          <Container>
+          <Container pb='100px'>
             <Flex sx={styles.header}>
               <Logo src={LogoDark}/>
               <Link href='/blog' sx={styles.button}>
@@ -57,13 +57,8 @@ export default function Post({ postData }) {
               <Flex sx={styles.article}>
                 <Text dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
               </Flex>
-              
-              {/* <article>
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}/>
-              </article> */}
 
             </Box>
-
             <Subscribe/>
           </Container>
       </ThemeProvider>
